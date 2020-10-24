@@ -43,7 +43,7 @@ ul {
     list-style-type: none;
 }
 
-/* HEADER LAYOUT CONTROL */
+/* CONTAINERS GENERAL LAYOUT CONTROL */
 header {
     background-image: url(./biker-land-assets/image-1-mobile@2x.jpg);
     background-size: cover;
@@ -62,20 +62,24 @@ header {
     top: calc(50% - 150px);
 }
 
+.about, .mission, .gram {
+    background-color: transparent;
+}
 
-/* ABOUT SECTION */
-
-/* ALISSA SECTION */
 .alissa {
     background-color: #f4f4f4;
 }
 
+.gram__nav-icons {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
 /* IMAGES AND BACKGROUND IMAGES */
-.about__div-bg1, .about__div-bg2 {
+.about__div-bg1, .about__div-bg2, .gram__nav-icons {
     background-repeat: no-repeat;
     background-size: cover;
-    /* Scaling the height of the div proportional to the width of the screen
-     at an aspect ratio close to original image file. */
+    /* Height obeys aspect ratio of mobile PSD */
     height: 50vw;
 }
 
@@ -84,7 +88,20 @@ header {
 }
 
 .about__div-bg2 {
-        background-image: url(./biker-land-assets/image-7.jpg);
+    background-image: url(./biker-land-assets/image-7.jpg);
+}
+
+.gram__nav-icons {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    height: auto;
+    background-position-x: 72%;
+}
+
+
+.alissa__div-img1 {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
 }
 
 /* MENUS, BUTTON AND ANCHOR STYLING */
@@ -136,7 +153,6 @@ header {
     /* To create padding for ul to share with background color with */
     padding-top: 58px;
     top: 0;
-    
     right: 0;
 }
 
@@ -188,6 +204,25 @@ main p {
     font-size: 5rem;
     color: #f4f4f4;
 }
+
+.gram__nav-icons i {
+    display: block;
+    color: #fff;
+    font-size: 7rem;
+    margin: 45px 0;
+}
+
+.gram__nav-icons li:first-child i {
+    margin-top: 0;
+}
+
+.gram__nav-icons a {
+    display: inline-block;
+    color: #F2A11C;
+    font-size: 4.5rem;
+}
+
+
 
 /* Hides header navigation menu while in mobile sized viewport. */
 .mobile--hidden {
