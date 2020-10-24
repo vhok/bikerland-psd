@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Hero image and main nav -->
-    <header>
+    <header id="home">
         <div class="header__div-h1">
             <h1>Bikerland</h1>
         </div>
@@ -27,7 +27,7 @@
             <ul class="header__ul-mobile">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#">Blog</a></li> <!-- No blog in main page -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -37,7 +37,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__div-bg1"></div>
             <h2>About us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem, a blandit sem. Quisque interdum orci.</p>
@@ -85,13 +85,13 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <section class="subscribe">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <h3>Contact</h3>
             <p>info@email.com | 123 - 456 - 7890</p>
