@@ -8,7 +8,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* DEFAULT STYLES */
+/* ******* DEFAULT STYLES ******* */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ ul {
     list-style-type: none;
 }
 
-/* CONTAINERS GENERAL LAYOUT CONTROL */
+/* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
 header {
     background-image: url(./biker-land-assets/image-1-mobile@2x.jpg);
     background-size: cover;
@@ -52,7 +52,7 @@ header {
     height: 100vh;
 }
 
-/* For convenient centering of h1 */
+/* For convenient centering of h1. */
 .header__div-h1 {
     height: 300px;
     width: 100%;
@@ -70,16 +70,23 @@ header {
     background-color: #f4f4f4;
 }
 
+.gram {
+    padding-bottom: 60px;
+}
 .gram__nav-icons {
     padding-top: 95px;
     padding-bottom: 95px;
 }
 
-/* IMAGES AND BACKGROUND IMAGES */
+footer {
+    background-color: #1F2022;
+}
+
+/* ******* IMAGES AND BACKGROUND IMAGES ******* */
 .about__div-bg1, .about__div-bg2, .gram__nav-icons {
     background-repeat: no-repeat;
     background-size: cover;
-    /* Height obeys aspect ratio of mobile PSD */
+    /* Height obeys aspect ratio of mobile PSD. */
     height: 50vw;
 }
 
@@ -91,20 +98,37 @@ header {
     background-image: url(./biker-land-assets/image-7.jpg);
 }
 
-.gram__nav-icons {
-    background-image: url(./biker-land-assets/image-5.jpg);
-    height: auto;
-    background-position-x: 72%;
-}
-
-
 .alissa__div-img1 {
     width: 90%;
     margin: 0 auto;
     padding-top: 70px;
 }
 
-/* MENUS, BUTTON AND ANCHOR STYLING */
+.gram__nav-icons {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    height: auto;
+    background-position-x: 72%;
+}
+
+/* assist with containing floated image elements */
+/* .gram__div-container {
+
+} */
+
+.gram__div-img1, .gram__div-img2 {
+    width: 44%;
+    float: left;
+}
+
+.gram__div-img1 {
+    margin: 0 calc(12% / 3);
+}
+
+.gram__div-img2 {
+    margin-right: calc(12% / 3);
+}
+
+/* ******* MENUS, BUTTON AND ANCHOR STYLING ******* */
 .header__nav-mobile {
     position: fixed;
     top: 0;
@@ -168,7 +192,16 @@ header {
     margin-bottom: 65px;
 }
 
-/* FONT STYLE CONTROL */
+.contact {
+    padding: 50px 0;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0 5%;
+}
+
+/* ******* FONT STYLE CONTROL ******* */
 h1, h2, h3 {
     font-family: 'Pacifico', cursive;
     font-weight: 700;
@@ -177,16 +210,20 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-h2 {
-    color: #1F2022;
-    font-size: 5rem;
-    margin-top: 50px;
-}
-
 h1 {
     font-size: 9rem;
     color: #F2A11C;
     margin: 0;
+}
+
+h2 {
+    color: #1F2022;
+    font-size: 5rem;
+    margin: 50px 0;
+}
+
+h3 {
+    color: #F2A11C;
 }
 
 p {
@@ -205,6 +242,12 @@ main p {
     color: #f4f4f4;
 }
 
+.gram__nav-icons a {
+    display: inline-block;
+    color: #F2A11C;
+    font-size: 4.5rem;
+}
+
 .gram__nav-icons i {
     display: block;
     color: #fff;
@@ -216,12 +259,26 @@ main p {
     margin-top: 0;
 }
 
-.gram__nav-icons a {
-    display: inline-block;
-    color: #F2A11C;
-    font-size: 4.5rem;
+.contact a {
+    font-size: 2.3rem;
+    color: #fff;
 }
 
+footer p {
+    color: #fff;
+}
+
+.copywrite {
+    background-color: #000;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+.juno {
+    color: blue;
+}
 
 
 /* Hides header navigation menu while in mobile sized viewport. */
@@ -229,7 +286,7 @@ main p {
     display: none;
 }
 
-/* ADJUSTMENTS TO CONVERT MOBILE INTO DESKTOP */
+/* ******* ADJUSTMENTS TO CONVERT MOBILE INTO DESKTOP ******* */
 @media (min-width: 481px) {
 /* Hides hamburger menu when in desktop sized viewport */
     /* .desktop--hidden {
