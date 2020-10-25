@@ -59,7 +59,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequate vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
             <a href="#">read more</a>
         </section>
-        <section class="gram">
+        <section class="gram clearfix">
             <nav class="gram__nav-icons">
                 <ul>
                     <li>
@@ -77,42 +77,47 @@
                 </ul>
             </nav>
             <h2>The Gram</h2>
-            <!-- This div's main purpose serves to assist in preventing collapse of images. -->
-            <div class="gram__div-container clearfix">
-                <div class="gram__div-img1">
-                    <img src="./biker-land-assets/image-8.jpg" alt="A girl with a helmet biking along a street.">
-                </div>
-                <div class="gram__div-img2">
-                    <img src="./biker-land-assets/image-3.jpg"
-                        alt="A vintage image of a racing biker moving past a road with spectators.">
-                </div>
+
+            <div class="gram__div-img1">
+                <img src="./biker-land-assets/image-8.jpg" alt="A girl with a helmet biking along a street.">
+            </div>
+            <div class="gram__div-img2">
+                <img src="./biker-land-assets/image-3.jpg"
+                    alt="A vintage image of a racing biker moving past a road with spectators.">
+            </div>
+            <div class="gram__div-img3 mobile--hidden">
+                <img src="./biker-land-assets/image-4.jpg" alt="A girl with a helmet biking along a street.">
             </div>
 
         </section>
     </main>
-    <footer id="contact">
-        <section class="contact">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section id="contact" class="contact">
             <h3>Contact</h3>
             <p>info@email.com | 123 - 456 - 7890</p>
             <p>123 some road, Toronto, ON</p>
             <p>A5A 5A5, Canada</p>
             <h3>Stay updated</h3>
+        </section>
+
+        <section class="subscribe">
             <p>Subscribe to our newsletter to stay updated.</p>
-            <form class="contact__form">
+            <form class="subscribe__form">
                 <label for="email" class="sr-only">Please enter your email address.</label>
                 <input type="email" name="email" id="email" placeholder="email address">
                 <input type="submit" value="Subscribe">
             </form>
         </section>
+
         <p class="copywrite">Copyright © 2019 HackerYou. Created at <span><a href="https://junocollege.com/" class="juno">Juno College</a></span>.</p>
     </footer>
 </body>

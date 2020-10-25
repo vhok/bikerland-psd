@@ -80,6 +80,12 @@ header {
 
 footer {
     background-color: #1F2022;
+    padding-top: 50px;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 5%;
 }
 
 /* ******* IMAGES AND BACKGROUND IMAGES ******* */
@@ -188,15 +194,6 @@ footer {
     margin-bottom: 65px;
 }
 
-.contact {
-    padding: 50px 0;
-}
-
-.contact li {
-    display: inline-block;
-    margin: 0 5%;
-}
-
 /* ******* FONT STYLE CONTROL ******* */
 h1, h2, h3 {
     font-family: 'Pacifico', cursive;
@@ -255,8 +252,8 @@ main p {
     margin-top: 0;
 }
 
-.contact a {
-    font-size: 2.3rem;
+footer a {
+    font-size: 1.8rem;
     color: #fff;
 }
 
@@ -264,11 +261,11 @@ footer p {
     color: #fff;
 }
 
-.contact h3 {
+footer h3 {
     margin: 50px 0 30px;
 }
 
-.contact p {
+footer p {
     margin: 13px 0;
     font-size: 2.3rem;
 }
@@ -277,6 +274,7 @@ footer p {
     background-color: #000;
     color: #4A4A4A;
     margin: 0;
+    margin-top: 50px;
     padding: 15px 0;
     font-size: 1.8rem;
 }
@@ -286,18 +284,18 @@ footer p {
 }
 
 /* ******* FORM STYLING ******* */
-.contact__form input {
+.subscribe__form input {
     width: 90%;
     height: 50px;
 }
 
-.contact__form input[type="email"] {
+.subscribe__form input[type="email"] {
     font-size: 2rem;
     color:#1F2022
     
 }
 
-.contact__form input[type="submit"] {
+.subscribe__form input[type="submit"] {
     border: none;
     background-color: #F2A11C;
     color: #1F2022;
@@ -308,14 +306,28 @@ footer p {
 }
 
 /* Hides header navigation menu while in mobile sized viewport. */
-/* .mobile--hidden {
+.mobile--hidden {
     display: none;
-} */
+}
 
 /* ******* ADJUSTMENTS TO CONVERT MOBILE INTO DESKTOP ******* */
 @media (min-width: 481px) {
 /* Hides hamburger menu when in desktop sized viewport */
-    .desktop--hidden {
-        display: none;
-    }
+.desktop--hidden {
+    display: none;
+}
+
+.mobile--hidden {
+    display: block;
+}
+
+/* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
+header {
+    background-image: url(./biker-land-assets/image-1.jpg);
+}
+
+
+
+
+
 }
