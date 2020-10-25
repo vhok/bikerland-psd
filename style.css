@@ -66,6 +66,11 @@ header {
     background-color: transparent;
 }
 
+.main__div-contain {
+    padding-top: 50px;
+    padding-bottom: 65px;
+}
+
 .alissa {
     background-color: #f4f4f4;
 }
@@ -191,7 +196,6 @@ footer li {
     /* Anchor tags are inline, can't add margin without 'disply:inline-block'. */
     display: inline-block;
     padding: 20px 45px;
-    margin-bottom: 65px;
 }
 
 /* ******* FONT STYLE CONTROL ******* */
@@ -211,7 +215,6 @@ h1 {
 h2 {
     color: #1F2022;
     font-size: 5rem;
-    margin: 50px 0;
 }
 
 h3 {
@@ -233,6 +236,10 @@ main p {
 .header__ul-mobile a {
     font-size: 5rem;
     color: #f4f4f4;
+}
+
+.gram h2 {
+    margin: 65px 0;
 }
 
 .gram__nav-icons a {
@@ -272,7 +279,7 @@ footer p {
 
 .copywrite {
     background-color: #000;
-    color: #4A4A4A;
+    color: #7e7e7e;
     margin: 0;
     margin-top: 50px;
     padding: 15px 0;
@@ -325,10 +332,25 @@ footer p {
 
 /* NOTE! REMEMBER TO MOVE THE CLEARFIX ONCE YOU CREATE THE WRAPPER
 AND REMEMBER THE VW YOU IMPOSED EARLIER */
-
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     padding-top: 30px;
+}
+
+.header__nav-social {
+    position: absolute;
+    /* This calc should be updated everytime .header__nav-social li margin is updated. */
+    top: calc(50% - 15px * 7);
+    right: 55px;
+    font-size: 2.3rem;
+}
+
+.header__nav-social li {
+    margin: 15px 0;
+}
+
+.header__nav-social a {
+    color:  #F2A11C;
 }
 
 .header__nav-desktop li {
@@ -339,6 +361,40 @@ header {
     color: #fff;
     font-size: 2rem;
     margin: 0 23px;
+}
+
+.main__div-contain, .about__div-bg1, .about__div-bg2 {
+    height: 40vw;
+}
+
+.main__div-contain {
+    text-align: left;
+}
+
+.main__div-contain a {
+    margin-left: 5%;
+}
+
+.about p {
+    margin-left: 5%;
+    margin-right: 55%;
+}
+
+.mission p {
+    margin-left: 55%;
+    margin-right: 5%;
+}
+
+.about__div-bg1, .about__div-bg2 {
+    width: 50%;
+}
+
+.about__div-bg1 {
+    float: right;
+}
+
+.about__div-bg2 {
+    float: left;
 }
 
 
