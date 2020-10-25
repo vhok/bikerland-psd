@@ -63,20 +63,21 @@
             <nav class="gram__nav-icons">
                 <ul>
                     <li>
-                        <i class="fas fa-bicycle"></i>
+                        <i class="fas fa-bicycle" aria-hidden="true"></i>
                         <a href="#">Products</a>
                     </li>
                     <li>
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                         <a href="#">Community</a>
                     </li>
                     <li>
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                         <a href="#contact">Reach out</a>
                     </li>
                 </ul>
             </nav>
             <h2>The Gram</h2>
+            <!-- This div's main purpose serves to assist in preventing collapse of images. -->
             <div class="gram__div-container clearfix">
                 <div class="gram__div-img1">
                     <img src="./biker-land-assets/image-8.jpg" alt="A girl with a helmet biking along a street.">
@@ -91,19 +92,22 @@
     </main>
     <footer id="contact">
         <section class="contact">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
             <h3>Contact</h3>
             <p>info@email.com | 123 - 456 - 7890</p>
             <p>123 some road, Toronto, ON</p>
             <p>A5A 5A5, Canada</p>
             <h3>Stay updated</h3>
             <p>Subscribe to our newsletter to stay updated.</p>
-            <form>
+            <form class="contact__form">
                 <label for="email" class="sr-only">Please enter your email address.</label>
                 <input type="email" name="email" id="email" placeholder="email address">
                 <input type="submit" value="Subscribe">
