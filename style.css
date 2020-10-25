@@ -105,7 +105,7 @@ footer li {
     background-image: url(./biker-land-assets/image-7.jpg);
 }
 
-.alissa__div-img1 {
+.alissa__div-redjacket {
     width: 90%;
     margin: 0 auto;
     padding-top: 70px;
@@ -117,16 +117,16 @@ footer li {
     background-position-x: 72%;
 }
 
-.gram__div-img1, .gram__div-img2 {
+.gram__div-orangehelmet, .gram__div-racer {
     width: 44%;
     float: left;
 }
 
-.gram__div-img1 {
+.gram__div-orangehelmet {
     margin: 0 calc(12% / 3);
 }
 
-.gram__div-img2 {
+.gram__div-racer {
     margin-right: calc(12% / 3);
 }
 
@@ -322,11 +322,24 @@ footer p {
 }
 
 /* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
+
+/* NOTE! REMEMBER TO MOVE THE CLEARFIX ONCE YOU CREATE THE WRAPPER
+AND REMEMBER THE VW YOU IMPOSED EARLIER */
+
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
+    padding-top: 30px;
 }
 
+.header__nav-desktop li {
+    display: inline-block;
+}
 
+.header__nav-desktop a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 23px;
+}
 
 
 
