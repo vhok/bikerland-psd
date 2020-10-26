@@ -43,6 +43,10 @@ ul {
     list-style-type: none;
 }
 
+.wrapper {
+    max-width: 2000px;
+    margin: 0 auto;
+}
 /* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
 header {
     background-image: url(./biker-land-assets/image-1-mobile@2x.jpg);
@@ -329,15 +333,6 @@ footer p {
 
 /* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
 
-/* NOTE! REMEMBER TO MOVE THE CLEARFIX ONCE YOU CREATE THE WRAPPER
-AND REMEMBER THE VW YOU IMPOSED EARLIER */
-.mission a, .about a, .alissa a {
-    font-size: 2rem;
-    padding: 15px 35px;
-}
-
-/* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
-
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     padding-top: 30px;
@@ -366,6 +361,21 @@ header {
     padding-bottom: 80px;
 }
 
+footer {
+    padding-top: 80px;
+}
+
+.contact {
+    width: 50%;
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.subscribe {
+    width: 50%;
+    float: right;
+}
+
 /* ******* IMAGES AND BACKGROUND IMAGES ******* */
 .about, .mission, .about__div-bg1, .about__div-bg2 {
     min-height: 50vh;
@@ -386,7 +396,7 @@ header {
 .alissa__div-red-jacket {
     width: 25%;
     padding: 0;
-    margin: 80px 35px 80px 10%;
+    margin: 80px 35px 80px 80px;
     float: left;
 }
 
@@ -397,7 +407,7 @@ header {
 
 .gram__div-orange-helmet, .gram__div-racer, .gram__div-bike {
     margin: 0;
-    width: calc(100% / 3 - 10%);
+    width: calc(100% / 3 - 80px);
     display:inline-block;
     float: none;
 }
@@ -407,6 +417,11 @@ header {
 }
 
 /* ******* MENUS, BUTTON AND ANCHOR STYLING ******* */
+.mission a, .about a, .alissa a {
+    font-size: 2rem;
+    padding: 15px 35px;
+}
+
 .header__nav-social {
     position: absolute;
     /* This calc should be updated everytime .header__nav-social li margin is updated. */
@@ -457,6 +472,24 @@ footer li {
     text-transform: uppercase;
 }
 
+/* ******* FORM STYLING ******* */
+.subscribe__form input {
+    height: 45px;
+}
+
+.subscribe__form input[type="email"] {
+    width: 440px;
+    font-size: 1.8rem;
+    text-align: left;
+    
+}
+
+.subscribe__form input[type="submit"] {
+    width: 160px;
+    font-size: 1.7rem;
+    margin-left: -4px;
+}
+
 /* ******* FONT STYLE CONTROL ******* */
 .about p, .mission p, .alissa p {
     line-height: 1.5;
@@ -478,6 +511,19 @@ footer li {
 
 .gram h2 {
     font-size: 4rem;
+}
+
+.contact, .contact h3, .subscribe, .subscribe h3 {
+    text-align: left;
+}
+
+.contact p, .subscribe p {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.copywrite {
+    margin-top: 80px;
 }
 
 }
