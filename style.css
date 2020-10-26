@@ -97,8 +97,7 @@ footer li {
 .about__div-bg1, .about__div-bg2, .gram__nav-icons {
     background-repeat: no-repeat;
     background-size: cover;
-    /* Height obeys aspect ratio of mobile PSD. 
-    IMPORTANT SELF-NOTE: Must account for desktop version beyond wrapper size.*/
+    /* Height obeys aspect ratio of mobile PSD. For desktop "vw" gets overwritten, so no worries about larger screen size.*/
     height: 50vw;
 }
 
@@ -110,7 +109,7 @@ footer li {
     background-image: url(./biker-land-assets/image-7.jpg);
 }
 
-.alissa__div-redjacket {
+.alissa__div-red-jacket {
     width: 90%;
     margin: 0 auto;
     padding-top: 70px;
@@ -122,12 +121,12 @@ footer li {
     background-position-x: 72%;
 }
 
-.gram__div-orangehelmet, .gram__div-racer {
+.gram__div-orange-helmet, .gram__div-racer {
     width: 44%;
     float: left;
 }
 
-.gram__div-orangehelmet {
+.gram__div-orange-helmet {
     margin: 0 calc(12% / 3);
 }
 
@@ -332,11 +331,82 @@ footer p {
 
 /* NOTE! REMEMBER TO MOVE THE CLEARFIX ONCE YOU CREATE THE WRAPPER
 AND REMEMBER THE VW YOU IMPOSED EARLIER */
+.mission a, .about a, .alissa a {
+    font-size: 2rem;
+    padding: 15px 35px;
+}
+
+/* ******* CONTAINERS GENERAL LAYOUT CONTROL ******* */
+
 header {
     background-image: url(./biker-land-assets/image-1.jpg);
     padding-top: 30px;
 }
 
+.main__div-contain {
+    width: 50%;
+    padding: 80px;
+    padding-bottom: 20px;
+}
+
+.about .main__div-contain {
+    float: left;
+}
+
+.mission .main__div-contain {
+    float: right;
+}
+
+.alissa .main__div-contain {
+    padding: 80px 80px 20px 20px;
+    width: auto;
+}
+
+.gram {
+    padding-bottom: 80px;
+}
+
+/* ******* IMAGES AND BACKGROUND IMAGES ******* */
+.about, .mission, .about__div-bg1, .about__div-bg2 {
+    min-height: 50vh;
+}
+
+.about__div-bg1, .about__div-bg2 {
+    width: 50%;
+}
+
+.about__div-bg1 {
+    float: right;
+}
+
+.about__div-bg2 {
+    float: left;
+}
+
+.alissa__div-red-jacket {
+    width: 25%;
+    padding: 0;
+    margin: 80px 35px 80px 10%;
+    float: left;
+}
+
+.alissa .main__div-contain {
+    float: left;
+    width: 60%;
+}
+
+.gram__div-orange-helmet, .gram__div-racer, .gram__div-bike {
+    margin: 0;
+    width: calc(100% / 3 - 10%);
+    display:inline-block;
+    float: none;
+}
+
+.gram__div-racer {
+    margin: 0 40px;
+}
+
+/* ******* MENUS, BUTTON AND ANCHOR STYLING ******* */
 .header__nav-social {
     position: absolute;
     /* This calc should be updated everytime .header__nav-social li margin is updated. */
@@ -363,40 +433,51 @@ header {
     margin: 0 23px;
 }
 
-.main__div-contain, .about__div-bg1, .about__div-bg2 {
-    height: 40vw;
+.gram__nav-icons {
+    padding: 180px 0;
 }
 
-.main__div-contain {
+.gram__nav-icons li {
+    display: inline-block;
+    margin: 0 60px;
+}
+
+.gram__nav-icons a {
+    font-size: 2.7rem;
+}
+
+.gram__nav-icons i {
+    font-size: 4.5rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+/* ******* FONT STYLE CONTROL ******* */
+.about p, .mission p, .alissa p {
+    line-height: 1.5;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main__div-contain, .main__div-contain h2 {
     text-align: left;
 }
 
-.main__div-contain a {
-    margin-left: 5%;
+.main__div-contain p {
+    font-size: 2rem;
 }
 
-.about p {
-    margin-left: 5%;
-    margin-right: 55%;
+.main__div-contain h2 {
+    font-size: 4rem;
 }
 
-.mission p {
-    margin-left: 55%;
-    margin-right: 5%;
+.gram h2 {
+    font-size: 4rem;
 }
-
-.about__div-bg1, .about__div-bg2 {
-    width: 50%;
-}
-
-.about__div-bg1 {
-    float: right;
-}
-
-.about__div-bg2 {
-    float: left;
-}
-
-
 
 }
